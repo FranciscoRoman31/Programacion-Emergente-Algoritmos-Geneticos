@@ -4,7 +4,7 @@ Este proyecto implementa dos algoritmos genéticos para resolver diferentes prob
 1. **Sodoku**: Resolución de puzzles de Sudoku
 2. **Horarios**: Generación de horarios escolares/universitarios
 
-## Archivos del Proyecto
+# Archivos del Proyecto
 
 ### 1. `soduku.py` - Solucionador de Sudoku con Algoritmo Genético
 
