@@ -43,10 +43,7 @@ def make_population(count, initial_board):
     return population
 
 def get_fitness(chromosome):
-    """
-    Calcula fitness de forma completa y eficiente.
-    Fitness máximo: 243 (81×3 verificaciones)
-    """
+    """Calcula fitness de un cromosoma."""
     fitness = 0
     
     # 1. Verificar filas (81 puntos)
@@ -143,8 +140,6 @@ def print_chromosome(ch):
 
 def genetic_algorithm_sudoku(initial_file, pop_size=1000, generations=1000, 
                             pm=0.1, pc=0.8, elite_percentage=0.1):
-    """Algoritmo genético principal mejorado"""
-    
     initial_board = read_puzzle(initial_file)
     
     # Crear población inicial
@@ -193,8 +188,8 @@ def genetic_algorithm_sudoku(initial_file, pop_size=1000, generations=1000,
 if __name__ == "__main__":
     tic = time.time()
     solution = genetic_algorithm_sudoku(
-        initial_file="./Test2.txt",
-        pop_size=500,  # Reducido para mejor rendimiento
+        initial_file="./Test.txt",
+        pop_size=500,
         generations=500,
         pm=0.15,
         pc=0.85,
